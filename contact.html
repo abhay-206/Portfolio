@@ -3,55 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Portfolio</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Contact Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-            <div class="left">Abhay's portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact-me</a></li>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Abhay's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact-me</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-<section class="contact-section">
+    <!-- MAIN CONTENT -->
+    <main class="page-header-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <span class="text-grey text-uppercase tracking-wide">Get In Touch</span>
+                        <h2 class="fw-bold mt-2">Contact Me</h2>
+                        <p class="text-grey mt-3">I'm always open to discussing web development projects, creative ideas or opportunities to be part of your vision.</p>
+                    </div>
 
-    <div class="contact-container">
-
-        <div class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>Have a project idea or want to collaborate? Send me a message.</p>
-
-            <div class="info-box">
-                <p>📧 Email: abhay@example.com</p>
-                <p>📍 Location: India</p>
-                <p>📞 Phone: +91 XXXXX XXXXX</p>
+                    <form class="custom-form p-4 p-md-5 rounded-4" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1);">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label text-grey mb-1">Your Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-grey mb-1">Your Email</label>
+                                <input type="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-grey mb-1">Subject</label>
+                                <input type="text" class="form-control" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-grey mb-1">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Hello Abhay, I would like to talk about..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn-gradient w-100 py-3 fs-5">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </main>
 
-        <form class="contact-form">
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <p class="text-grey small mb-0">Copyright &copy; 2024 www.abhay's portfolio.com | All rights reserved</p>
+        </div>
+    </footer>
 
-            <h2>Contact Me</h2>
-
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-
-            <input type="text" placeholder="Subject">
-
-            <textarea placeholder="Your Message" rows="6"></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
-
-    </div>
-
-</section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
